@@ -1,0 +1,162 @@
+/*header*/
+.logo {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 119px;
+}
+.navigation {
+	display: inline-block;
+	vertical-align: middle;
+}
+.nav-li {
+	display: inline-block;
+	margin-right: 30px;
+}
+.header-wraper {
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	left:0;
+	width: 100%;
+	z-index: 20;
+}
+
+.image {
+	width: 100%;
+}
+.text-image {
+	position: absolute;
+	top: 105px;
+	left: 700px;
+	color: #fff;
+}
+.image-wraper {
+	position: relative;
+}
+/*section#1*/
+.section1 {
+	margin-top: 96px;
+}
+.container {
+	width: 1332px;
+	margin: 0 auto;
+	/*background-color: yellow;*/
+}
+.block-1 {
+	display: inline-block;
+	width: 636px;
+	margin-right: 50px;
+	background-color: grey;
+}
+.block-2 {
+	display: inline-block;
+	width: 636px;
+	background-color: lightblue;
+}
+.read {
+	color: #FF7A00;
+}
+.read::after {
+	content: '';
+	width: 47px;
+	height: 4px;
+	background-color: #FF7A00;
+	display: inline-block;
+	margin-left: 20px;
+}
+.load {
+	width: 190px;
+	height: 70px;
+	background-color: #FF7A00;
+	margin: 0 auto;
+	margin-top: 66px;
+	color: #fff;
+	padding: 23px 48px;
+	font-size: 16px;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+/*footer*/
+.block1-footer {
+	display: inline-block;
+	margin-right: 198px;
+	vertical-align: top;
+}
+.block2-footer {
+	display: inline-block;
+	margin-right: 240px;
+	vertical-align: top;
+}
+.block3-footer {
+	display: inline-block;
+	margin-right: 217px;
+	vertical-align: top;
+}
+.block4-footer {
+	display: inline-block;
+	vertical-align: top;
+}
+.copyright {
+	text-align: right;
+}
+
+
+/*center example*/
+.box-wraper {
+	width: 400px;
+	height: 400px;
+	background-color: lightblue;
+	position: relative;
+
+/*	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+	transition-delay: 3s;*/
+	transition: all 0.5s linear 3s;
+}
+.center-box {
+	width: 150px;
+	height: 150px;
+	background-color: blue;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%) rotate(45deg);
+	transition: all 0.5s linear 3s;
+}
+.box-wraper:hover {
+	background-color: yellow;
+}
+.center-box:hover {
+	background-color: red;
+	transform: translate(-50%,-50%) rotate(0deg);
+}
+
+/*animation example*/
+.image-chat {
+	height: 100px;
+	animation: chatanimation 5s infinite;
+	/*position: absolute;*/
+}
+.animation-box {
+	/*position: relative;*/
+	height: 200px;
+}
+
+
+/*@keyframes chatanimation {
+	0% {left:0px; transform: rotate(0deg);}
+	25% {left:200px;  transform: rotate(45deg)}
+	50% {left:400px;  transform: rotate(360deg)}
+	75% {left:600px;  transform: rotate(45deg)}
+	100% {left:800px;  transform: rotate(360deg)}
+}*/
+
+@keyframes chatanimation {
+	0% {transform: translateX(0px) rotate(0deg);}
+	25% {transform: translateX(200px) rotate(45deg)}
+	50% {transform: translateX(400px) rotate(360deg)}
+	75% {transform: translateX(600px)  rotate(45deg)}
+	100% {transform:translateX(800px)  rotate(360deg)}
+}
